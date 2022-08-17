@@ -1,0 +1,22 @@
+Couldn't uninstall via pip3 so I had to:
+
+sudo rm -rf /usr/lib/python3/dist-packages/ldap3*
+sudo pip3 install ldap3
+Looks like, did the trick, but now I got another error message:
+
+cannot import name 'PyAsn1UnicodeDecodeError' from 'pyasn1.error'
+So I trigger the nuke of upgrades :)
+
+sudo apt update -y && sudo apt dist-upgrade -y && sudo apt autoremove --> up to date
+python3 -m pip install --upgrade pip --> up to date
+Pyasn upgrade:
+
+sudo pip3 uninstall pyasn
+sudo pip3 install pyasn
+sudo pip3 install --upgrade pyasn
+Installed the same version :(
+
+Requirement already up-to-date: pyasn in /usr/local/lib/python3.8/dist-packages (1.6.0b1)
+Finally eager upgrade-strategy did the trick:
+
+sudo pip3 install -U ldap3 --upgrade-strategy eager
