@@ -11,6 +11,8 @@ ANd Many More...................
 ```css
 Vulnerable Sites 
 
-https://www.php.id/blog/   ----- To XSS
+To XSS
+https://www.php.id/blog/
+https://www.php.id/forum
 
 ```
