@@ -42,6 +42,8 @@ CyberFrost skid  ----  https://www.youtube.com/channel/UCJgPPu2tGNoRVBreqYQtrFA
 TomCopeProductions  ----  https://www.youtube.com/user/TomCopeProductions
 
 Byte Boy  ----  https://www.youtube.com/channel/UCrnFQX4ic30EVG27mscTxYA
+
+Timmy TSENG Kali OSCP pentest  ----  https://www.youtube.com/c/TimmyTSENGKaliOSCPpentest
 ```
 
 ```sql
