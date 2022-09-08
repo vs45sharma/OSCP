@@ -28,7 +28,7 @@ File path traversal, validation of start of path
 
 File path traversal, validation of file extension with null byte bypass
 The application validates that the supplied filename ends with the expected file extension.
-../../../etc/passwd%00.png
+../../../etc/passwd%00.png ---> Ex. of NULL Character
 
 <=======================================================================================================>
 PHP Wrappers
@@ -49,8 +49,13 @@ cat     dir     action      details     file      download      path      folder
 include     page      show      doc     view      content     document      mod
 conf
 
-where can find LFI
+where can find LFI --> cookie value && post request 
+```
 
-cookie value
-post request 
+```perl
+Bypass Mechanism
+
+NULL Character
+DOT Truncation
+ENCODING
 ```
