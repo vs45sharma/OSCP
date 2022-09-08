@@ -43,3 +43,14 @@ The payload is sent in a POST request to the server such as:
 /script.php?page=index.html
 /script.php?page=../../../../../../../../etc/passwd
 ```
+
+```css
+cat     dir     action      details     file      download      path      folder
+include     page      show      doc     view      content     document      mod
+conf
+
+where can find LFI
+
+cookie value
+post request 
+```
