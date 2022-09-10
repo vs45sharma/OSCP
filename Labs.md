@@ -17,7 +17,9 @@ https://www.vulnmachines.com/
 
 PortSwigger
 
-DVWA
+DVWA - https://github.com/digininja/DVWA
+
+DVWS - https://github.com/snoopysecurity/dvws-node
 
 bWAPP
 
