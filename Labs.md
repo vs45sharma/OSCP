@@ -1,25 +1,22 @@
+**HackTheBox** - https://www.hackthebox.com/
 
-HackTheBox
+**TryHackMe** - https://tryhackme.com/
 
-TryHackMe
+**Pentester Lab** - https://attackdefense.pentesteracademy.com/
 
-Pentester Lab
+**VulnHub** - https://www.vulnhub.com/
 
-https://attackdefense.pentesteracademy.com/
-
-VulnHub
-
-Offensive-Security Play-Ground
+**Offensive-Security Play-Ground** - https://portal.offensive-security.com/labs/play
 
 https://hackaflag.com.br/academy/view_cursos_access.php?id=1
 
-https://www.vulnmachines.com/
+**vulnmachines** - https://www.vulnmachines.com/
 
-PortSwigger
+**PortSwigger** - https://portswigger.net/web-security/dashboard
 
-DVWA - https://github.com/digininja/DVWA
+**DVWA** - https://github.com/digininja/DVWA
 
-DVWS - https://github.com/snoopysecurity/dvws-node
+**DVWS** - https://github.com/snoopysecurity/dvws-node
 
-bWAPP
+**bWAPP** - http://www.itsecgames.com/
 
