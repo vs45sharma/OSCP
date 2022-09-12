@@ -9,4 +9,5 @@ https://hijacklibs.net/
 Blogs
 ```
 https://securiumsolutions.com/blog/
+https://www.cobalt.io/
 ```
