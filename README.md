@@ -15,5 +15,5 @@ To XSS
 https://www.php.id/blog/
 https://www.php.id/forum
 https://www.baseball.ca/
-
+https://www.fashionnova.com/
 ```
