@@ -10,4 +10,5 @@ Blogs
 ```
 https://securiumsolutions.com/blog/
 https://www.cobalt.io/
+https://blog.rehack.xyz/
 ```
