@@ -1,0 +1,12 @@
+```
+https://subdomainfinder.c99.nl/
+```
+```
+https://securityforeveryone.com/tools/find-subdomains
+```
+```
+https://www.nmmapper.com/sys/tools/subdomainfinder/
+```
+```
+https://osint.sh/subdomain/
+```
