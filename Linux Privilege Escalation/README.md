@@ -1,3 +1,5 @@
+https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
+
 ```css
 g0tmilk's Guide to Linux Privilege Escalation as well:
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
