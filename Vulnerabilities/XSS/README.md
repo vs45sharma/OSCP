@@ -2,6 +2,8 @@
 https://xsshunter.com/app
 
 https://www.volkis.com.au/blog/bypass-xss-in-wafs/
+
+https://tweetedtimes.com/v/1939
 ```
 
 ```css
