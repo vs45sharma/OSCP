@@ -115,4 +115,8 @@ https://brutelogic.com.br/blog/file-upload-xss/
 https://hackr.io/blog/xss-cheat-sheet
 https://brutelogic.com.br/blog/xss-with-hoisting/
 https://hackerone.com/reports/1010466
+https://medium.com/@fpatrik/how-i-found-an-xss-vulnerability-via-using-emojis-7ad72de49209
+https://infosecwriteups.com/blind-xss-for-beginners-c88e48083071
+https://infosecwriteups.com/reflected-xss-on-microsoft-com-via-angular-template-injection-2e26d80a7fd8
+
 ```
