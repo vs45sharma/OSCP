@@ -105,3 +105,14 @@ svg file upload
 </svg>
 ```
 
+Write-ups
+```
+https://infosecwriteups.com/how-i-was-able-to-find-50-cross-site-scripting-xss-security-vulnerabilities-on-bugcrowd-public-ba33db2b0ab1
+https://medium.com/@ao64400225/an-unusual-way-to-find-xss-injection-in-one-minute-9ed2c7e2a848
+https://c0ff33b34n.medium.com/simple-dom-xss-trick-c9b29364477c
+https://c0nqr0r.medium.com/reading-robots-txt-got-me-4-xss-reports-9fd2234c635f
+https://brutelogic.com.br/blog/file-upload-xss/
+https://hackr.io/blog/xss-cheat-sheet
+https://brutelogic.com.br/blog/xss-with-hoisting/
+https://hackerone.com/reports/1010466
+```
