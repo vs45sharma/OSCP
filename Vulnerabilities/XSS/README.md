@@ -1,3 +1,13 @@
+```perl
+Search Bar
+User Agent
+Cookie
+Local Storage
+Regex Filter
+Name Page or any input field
+```
+
+
 ```python
 https://owasp.org/www-community/attacks/xss/
 https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html
