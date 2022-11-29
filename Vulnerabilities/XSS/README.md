@@ -15,9 +15,8 @@ https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/DOM_based_XSS_
 https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md
 https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/02-Testing_for_Stored_Cross_Site_Scripting.html
 https://xsshunter.com/app
-
+https://github.com/hakluke/weaponised-XSS-payloads
 https://www.volkis.com.au/blog/bypass-xss-in-wafs/
-
 https://tweetedtimes.com/v/1939
 ```
 
