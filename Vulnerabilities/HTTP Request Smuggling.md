@@ -39,3 +39,6 @@ https://hackerone.com/reports/735748
 ```
 https://hackerone.com/reports/1238709
 ```
+```
+https://hackerone.com/reports/1665156
+```
