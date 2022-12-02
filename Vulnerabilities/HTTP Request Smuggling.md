@@ -42,3 +42,12 @@ https://hackerone.com/reports/1238709
 ```
 https://hackerone.com/reports/1665156
 ```
+```
+https://hackerone.com/reports/1675191
+```
+```
+https://hackerone.com/reports/1501679
+```
+```
+https://hackerone.com/reports/922597
+```
