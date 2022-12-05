@@ -25,6 +25,11 @@ https://infosecwriteups.com/http-request-smuggling-explained-and-exploited-part-
 https://infosecwriteups.com/http-request-smuggling-explained-and-exploited-part-0x2-7768d04883fb
 https://infosecwriteups.com/http-request-smuggling-explained-and-exploited-part-0x3-b61623287603
 ```
+```
+https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn
+https://portswigger.net/daily-swig/black-hat-2020-new-http-request-smuggling-variants-levied-against-modern-web-servers
+https://portswigger.net/daily-swig/http-request-smuggling-http-2-opens-a-new-attack-tunnel
+```
 
 Poc Reports
 ```
