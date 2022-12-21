@@ -1,5 +1,7 @@
 https://www.fuzzysecurity.com/tutorials/16.html
 
+[LOLBAS](https://lolbas-project.github.io/#)
+
 ```python
 TL;DR
 + WHOAMI?
