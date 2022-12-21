@@ -1,4 +1,6 @@
-https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
+[Basic Linux Privilege Escalation](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
+
+[GTFOBins](https://gtfobins.github.io/)
 
 ```css
 g0tmilk's Guide to Linux Privilege Escalation as well:
