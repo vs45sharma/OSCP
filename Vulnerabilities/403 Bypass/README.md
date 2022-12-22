@@ -14,3 +14,8 @@ GitHub Tools
 PoC Repots HackerOne
 ```
 1. [403 Forbidden Bypass at www.██████.mil](https://hackerone.com/reports/991717) - U.S Dept of Defence - $0
+
+2. [Ngnix Server version disclosure](https://hackerone.com/reports/141125) - drchrono - $50
+
+3. [Content Spoofing or Text Injection in (403 forbidden page injection) and Nginx version disclosure via response header](https://hackerone.com/reports/203391) - Ubiquiti Inc. - $0
+
