@@ -1,5 +1,21 @@
-```css
+1.[CTFtime.org](https://ctftime.org/writeups)
 
+2.[Hackthebox](https://app.hackthebox.com/home)
+
+3.[Hackthebox Academy](https://academy.hackthebox.com/dashboard)
+
+4.[TryHackMe](https://tryhackme.com/)
+
+5.[PortSwigger](https://portswigger.net/web-security)
+
+6.[Offensive-Security](https://portal.offensive-security.com/labs/play)
+
+7.[HackerOne](https://www.hacker101.com/)
+
+8.[vulnmachines](https://account.vulnmachines.com/user/challenges)
+
+
+```css
 DLL Hijacking
 
 https://github.com/wietze/HijackLibs
