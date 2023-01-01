@@ -1,3 +1,14 @@
+## MSF Plugins
+1. [NexPose](https://sectools.org/tool/nexpose/)
+2. [Nmap](https://nmap.org/)
+3. [Mimikatz](http://blog.gentilkiwi.com/mimikatz)
+4. [Nessus](https://www.tenable.com/products/nessus)
+5. [Stapi](https://www.rubydoc.info/github/rapid7/metasploit-framework/Rex/Post/Meterpreter/Extensions/Stdapi/Stdapi)
+6. [Railgun](https://github.com/rapid7/metasploit-framework/wiki/How-to-use-Railgun-for-Windows-post-exploitation)
+7. [Priv](https://github.com/rapid7/metasploit-framework/blob/master/lib/rex/post/meterpreter/extensions/priv/priv.rb)
+8. [Incognito](https://www.offensive-security.com/metasploit-unleashed/fun-incognito/)
+9. [Darkoperator](https://github.com/darkoperator/Metasploit-Plugins)
+
 ## MSFconsole Commands 
 
 | **Command**        | **Description**                                                  |
