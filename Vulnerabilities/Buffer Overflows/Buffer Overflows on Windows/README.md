@@ -1,6 +1,16 @@
+## Tools
+
+1. [Immunity Debugger](https://www.immunityinc.com/products/debugger/index.html)
+
+3. [x64DBG](https://github.com/x64dbg/x64dbg)
+
+4. [OllyDBG](http://www.ollydbg.de/)
+
+5. [WinDBG](http://wingdb.com/)
+
+6. [IDA Pro](https://www.hex-rays.com/products/ida/)
+
 ## Buffer Overflow Steps
-
-
 
 1. Fuzzing Parameters
 
@@ -12,11 +22,7 @@
 
 5. Jumping to Shellcode
 
-
-
 ## Commands
-
-
 
 | Command | Description |
 
