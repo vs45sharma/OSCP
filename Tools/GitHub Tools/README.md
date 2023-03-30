@@ -20,3 +20,7 @@ https://github.com/vladko312/SSTImap
 ```
 https://www.blackhatethicalhacking.com/tools/spoolsploit/
 ```
+## JavaScript File Reader
+```
+https://github.com/GerbenJavado/LinkFinder
+```
